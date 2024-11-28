@@ -1,0 +1,240 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #000;
+$secundary-color: whitesmoke;
+$third-color: yellow;
+$serif: Georgia, serif;
+$sans: Verdana, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  font: $font-stack;
+  color: $secundary-color;
+  overflow-x:hidden;
+}
+
+/*PARTE NAV*/
+nav {
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  margin-top: 1%;
+  .logo {
+    
+    width: 25%;
+    float: left;
+    img{
+      height: 10vh;
+    }
+  }
+  div {
+    width: 75%;
+    float: left;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 625px;
+    height: 10vh;
+    border-radius: 8px;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative; /* Necessario per posizionare lo span */
+    }
+
+    li {
+      width: 150px; /* Manteniamo la larghezza */
+      text-align: center;
+      position: relative; /* Necessario per la corretta gestione */
+      z-index: 1; /* Manteniamo i link sopra lo span */
+    }
+
+    a {
+      font-size: 1.7em;
+      font-weight: 500;
+      color: $secundary-color;
+      font-family: $sans;
+      text-decoration: none;
+      display: block; /* Assicuriamo che il link occupi l'intero contenitore */
+      padding: 0 20px;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 100%;
+      background: linear-gradient(45deg, $third-color, red);
+      border-radius: 8px;
+      transition: 0.5s;
+      z-index: 0; /* Lo span sta sotto i link */
+    }
+
+    // Animazione dello span
+    li:nth-child(1):hover ~ span {
+      left: 0;
+    }
+    li:nth-child(2):hover ~ span {
+      left: 150px;
+    }
+    li:nth-child(3):hover ~ span {
+      left: 300px;
+    }
+    li:nth-child(4):hover ~ span {
+      left: 450px;
+    }
+  }
+}
+
+
+/*PARTE 1*/
+.header {
+  height: 85vh;
+  background-image: url(../img/sec1.jpg);
+  background-color: $primary-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-txt{
+  display: flex;
+  // border: solid 5px red;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  padding: 10% 10% 2% 10%;
+  h1{
+    font-size: 4em;
+    font-weight: 500;
+  }
+  p{
+    font-size: 2em;
+  }
+}
+  .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // border: solid 5px blue;
+    
+    button{
+    font-size: 1rem;
+    margin: 0 3%;
+    padding: 1% 3%;
+    background-color: transparent;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    border-radius: 20px;
+    font-family: $sans;
+    font-weight: 400;
+    &:hover {
+      color: $secundary-color;
+      background-color: $primary-color;
+      border-color: $secundary-color;
+    }
+  }
+  }
+
+// PARTE 2
+.section {
+  height: 70vh;
+}
+
+
+
+/*PARTE 3*/
+.port {
+  h3 {
+    font-size: 2em;
+    font-family: $sans;
+    text-transform: uppercase;
+    color: $secundary-color;
+    text-align: center;
+  }
+  .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  perspective: 60px;
+    .prj-img {
+    min-width: 10rem;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    }
+  }
+  button {
+    color: aliceblue;// questo stile di botton!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+  }
+}
+
+
+
+// .prj-parent {
+//   display: flex;
+//   gap: 0.4rem;
+//   perspective: 60px;
+// }
+
+// PARTE 4
+.cont{
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 2rem;
+    color: $secundary-color;
+    font-family: $sans;
+  }
+  button {
+    font-size: 1rem;
+    margin: 0 3%;
+    padding: 1% 3%;
+    background-color: red;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    border-radius: 20px;
+    font-family: $sans;
+    font-weight: 400;
+    &:hover {
+      color: $secundary-color;
+      background-color: $primary-color;
+      border-color: $secundary-color;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  height: 10vh;
+  width: 100%;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 1.5rem;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+  }
+}

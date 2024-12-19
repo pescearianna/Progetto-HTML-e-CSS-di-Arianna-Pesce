@@ -2,78 +2,349 @@
 <html lang="en">
 <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arianna Pesce - Front Web Developer & UX Designer</title>
-    <!--keywordss-->
-    <link rel="stylesheet" href="assets/CSS/styles.css">
-    
+    <title>Arianna Pesce | Front-end Developer & UX/UI Designer</title>
+    <meta name="description" content="I am a Front-end Developer and UX\UI Designer based on Malaga, Spain. If you are looking to improve your project, contact me!">
+    <meta property="og:title" content="Arianna Pesce | Front-end Developer & UX/UI Designer" />
+    <meta property="og:description" content="I am a Front-end Developer and UX\UI Designer based on Malaga, Spain. If you are looking to improve your project, contact me!"/>
+    <meta property="og:image" content="https://pixabay.com/es/photos/desarrollador-de-software-6521720/" />
+    <!--<meta property="og:url" content="http" />-->
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/img/favicon-16x16.png" type="image/png"><!--favicon da inserire qui-->
-    <script src="https://kit.fontawesome.com/ecf9d232d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
 </head>
-<body>
+<body> 
     <nav>
-        <div class="logo"><img src="assets/img/logopng.png" alt="Logo"></div>
-        
-         <div>
-                <!-- Logo (opzionale) -->
-                
-        
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
+        <div class="flexp">
+            <img src="assets/img/logopng.png" alt="logo Arianna Pesce"><!-- Logo -->
+            <input class="menu-btn" id="menu-btn" type="checkbox">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span><!-- Icona -->
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="portfolio.html">Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <span></span>
             </ul>
-            
         </div>
     </nav>
+    <header><!--PARTE 1-->
+    <div class="start" id="grad">
+        <div class="start-wrap">
+            <div class="start-txt">
+                <p><span id="hithere">Hi there!</span> I'm</p>
+                <h1>Arianna Pesce</h1>
+                <p id="hithere-desc">Your future UX/UI Designer & Front End Developer</p>
+            </div>
+            <div class="start-btn">
+                <button type="button" onclick="window.location.href='portfolio.html';">See my works ></button>
+                <button type="button" onclick="window.location.href='contact.html';">Contact ></button> 
+            </div>
+        
+        </div>
+        <div class="start-img"><img src="assets/img/mey.png" alt="illustrazione di me stessa"></div>
+    </div> 
+</header>
+<main>
+<!--PARTE 2-->
+<div class="cv">
     
-    <div class="header"><!--PARTE 1-->
-        <div class="header-txt">
-            <h1>Arianna Pesce</h1>
-            <p>Your future UX/UI Designer & Front End Developer</p>
+    <div class="cv-sec ">
+        <p class="num">01 /</p>
+        <h2>About Me</h2>
+        <div class="aboutme">
+        <img src="assets/img/memoji.jpeg" alt="memoji">
+            <div class="aboutme-text">
+                <p id="des">
+                Hello there! <br>
+                I&#39;m Arianna Pesce a web designer, developer, and aspiring UX/UI designer. <br>
+                I&#39;m passionate about creating user-friendly and visually striking digital experiences. <br>
+                <br>
+                I enjoy blending creativity with functionality to craft websites that truly stand out finding inspiration from my Italian roots and the art of balancing aesthetics with purpose. 
+                When I&#39;m not working, you can find me exploring new places seeking fresh ideas to bring into my projects. I love travelling around the world! <br>
+                <br>
+                Let&#39;s connect and create something amazing together!
+                </p>
+            </div>  
         </div>
-        <div class="header-btn">
-            <button type="button">Find more ></button>
-            <button type="button">Contact ></button>
+    </div>  
+
+    
+
+
+    <div class="cv-sec ">
+        <p class="num">02 /</p>
+        <h2>Skills</h2>
+        <div class="skills">
+            <section>
+                <h3>UX Designer</h3>
+                <div class="skill">
+                    <label for="prototype">Prototype</label>
+                    <progress id="prototype" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="wireframe">Wyreframe</label>
+                    <progress id="wireframe" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="userflow">Userflow</label>
+                    <progress id="userflow" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="mokeup">Mokeups</label>
+                    <progress id="mokeup" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="illustrator">Illustrator</label>
+                    <progress id="illustrator" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="figma">Figma</label>
+                    <progress id="figma" max="100" value="20"></progress>
+                </div>
+                <div class="skill">
+                    <label for="photoshop">Photoshop</label>
+                    <progress id="photoshop" max="100" value="30"></progress>
+                </div>  
+            </section>
+            <section>
+                <h3>Front End Developer</h3>
+                <div class="skill">
+                    <label for="html">HTML & CSS</label>
+                    <progress id="html" max="100" value="80"></progress>
+                </div>
+                <div class="skill">
+                    <label for="javascript">Javascript</label>
+                    <progress id="javascript" max="100" value="30"></progress>
+                </div>
+                <div class="skill">
+                    <label for="react">React</label>
+                    <progress id="react" max="100" value="10"></progress>
+                </div>  
+                <div class="skill">
+                    <label for="vue">Vue.js</label>
+                    <progress id="vue" max="100" value="10"></progress>
+                </div>  
+            </section>
         </div>
     </div>
-    <div class="section pres"><!--PARTE 2-->
-        <div><!--img-->
-            <img src="" alt="Arianna Pesce">
+
+
+
+    <div class="cv-sec ">
+        <p class="num">02 /</p>
+        <h2>Education & Soft Skills</h2>
+        <div class="ed-sk">
+            <div class="ed">
+                <div class="row">
+                    <div>
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        2019
+                    </div>
+                    <div class="col-sm-9">
+                        <p><i class="bi bi-mortarboard-fill"></i> <br>
+                            University Ca' Foscari di Venezia | <span class="bold">Foreign Trade</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <h3>Certification</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>2024 - en curso</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Start2Impact University | <span class="bold">Full stack Developer</span></p>
+                        <p>Start2Impact University | <span class="bold">UX/UI Design</span></p>       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        2020 - 2021
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Google Discovery | <span class="bold">Marketing</span></p>   
+                        <p>Google Discovery | <span class="bold">Wine Marketing Specialist</span></p>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="sk">
+                <section>
+                    <h3>Soft skills</h3>
+                    <div>
+                        <ul>
+                            <li>Teamworking</li>
+                            <li>Adaptability</li>
+                            <li>Active listening</li>
+                            <li>Problem solving</li>
+                            <li>Creativity</li>
+                            <li>Positivity</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section >
+                    <h3>Lenguages</h3>
+                    <div class="skill">
+                        <label for="html">English</label>
+                        <progress id="html" max="100" value="80"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="javascript">Italian</label>
+                        <progress id="javascript" max="100" value="100"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="react">Spanish</label>
+                        <progress id="react" max="100" value="100"></progress>
+                    </div>  
+                    <div class="skill">
+                        <label for="vue">German</label>
+                        <progress id="vue" max="100" value="20">S</progress>
+                    </div>  
+                </section>
+            </div>
         </div>
-        <div>
-            <p>Hi there! I'm</p><i class="fa-brands fa-instagram"></i> 
-            <h2>Arianna Pesce</h2><!--txt-->
-            <p>I’m a 27 years-old laalalalalalallaallaorem ipsum snsdbdbisd"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
-            <p>I’m a 27 years-old laalalalalalallaallaorem ipsum snsdbdbisd"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
-        </div> 
+
     </div>
-    <div class="section port"><!--PARTE 3-->
-        <h3>Featured Works</h3>
+
+
+
+    <div class="cv-sec">
+        <p class="num">03 /</p>
+        <h2>Experience</h2>
+        <div class="grid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>NOW >>></p>
+                </div>
+                <div class="col-sm-9">
+                    Ready for new adventures!     
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>2024 >>></p>
+                </div>
+                <div class="col-sm-9">
+                    <p><span class="bold">Hostess </span><br>
+                        Hotel IKOS Porto Petro | Mallorca</p>     
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>2023 >>></p>
+                </div>
+                <div class="col-sm-9">
+                    <p><span class="bold">Receptionist </span><br>
+                        Hotel Tui Blue Rocador | Mallorca</p>
+                    <p><span class="bold">Waitress </span><br>
+                        Hotel Ziryab | Sierra Nevada</p>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>2022 >>></p>
+                </div>
+                <div class="col-sm-9">
+                    <p><span class="bold">Receptionist </span><br>
+                        Summer Cadiz Hostel | Càdiz</p>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>2018 - 2021 >>></p>
+                </div>
+                <div class="col-sm-9">
+                    <p><span class="bold">Marketing Specialist</span><br>
+                        OFHK Europe | Treviso</p>
+                    <p><span class="bold">Back-end foreign sales office </span><br>
+                        Borgo Molino spa | Treviso</p>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-sec ">
+        
+        <p class="num">04 /</p>
+        <h2>Works</h2>
+        
         <div class="wrapper">
-            <!-- <div class="prj-parent"> -->
-            <div class="prj-img" style="background-image: url(assets/img/prj0.jpg);"><p>io sono il teto che cerchi</p></div>
-            <div class="prj-img" style="background-image: url(assets/img/prj1.jpg);"></div>
-            <div class="prj-img" style="background-image: url(assets/img/prj2.png);"></div>
-            <div class="prj-img" style="background-image: url(assets/img/prj3.jpg);"></div>
-            <div class="prj-img" style="background-image: url(assets/img/prj4.png);"></div>
-            <!-- </div> -->
+            <div class="prj-parent">
+            <div class="preview-prj" style="background-image: url(assets/img/prj0.jpg);">
+                <div class="hide">
+                    <a href="project1.html">
+                        <h4>PROJECT #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="preview-prj" style="background-image: url(assets/img/prj1.jpg);">
+                <div class="hide">
+                    <a href="project1.html">
+                        <h4>PROJECT #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="preview-prj" style="background-image: url(assets/img/prj2.png);">
+                <div class="hide">
+                    <a href="project1.html">
+                        <h4>PROJECT #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="preview-prj" style="background-image: url(assets/img/prj3.jpg);">
+                <div class="hide">
+                    <a href="project1.html">
+                        <h4>PROJECT #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="preview-prj" style="background-image: url(assets/img/prj4.png);">
+                <div class="hide">
+                    <a href="project1.html">
+                        <h4>PROJECT #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <button>Find more projects ></button>
-    </div>
-    <div class="section cont"><!--PARTE 4-->
-        <p>Interested in working with me?<p>
-        <button>Contact</button>
-    </div>
-    <footer>
-        <div>
-            <a href="" ><i class="fa-brands fa-instagram"></i> Instagram |</a>
-            <a href="" ><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i> LinkedIn |</a>
-            <a href="" ><i class="fa-brands fa-github" style="color: #63E6BE;"></i> GitHub </a>
+            <button type="button" onclick="window.location.href='portfolio.html';">Find more projects ></button>
         </div>
-        <p>COPYRIGHT Arianna Pesce</p>
-    </footer>
+        
+    </div>
+</div>
+
+</main>
+<footer> 
+    <div class="social">
+        <a href="https://www.instagram.com/arianna_psc/?hl=it" ><i class="bi bi-instagram"></i><p> Instagram </p></a>
+        <a href="www.linkedin.com/in/ariannapesce" ><i class="bi bi-linkedin"></i><p> LinkedIn </p></a>
+        <a href="https://github.com/pescearianna" ><i class="bi bi-github"></i><p> Github </p></a>
+    </div>
+    <div class="copyright">
+        <p>&#169; Arianna Pesce</p>
+    </div>
+</footer>
 </body>
-
-

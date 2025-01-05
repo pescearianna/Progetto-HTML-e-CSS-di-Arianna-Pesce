@@ -7,8 +7,8 @@ This is a personal website with a portfolio showcasing my web development and UX
 ## Built With
 
 - HTML5
-- CSS3
+- SASS
 
 ## Deployment
 
-This project is deployed using GitHub Pages: [Project Link](https://your-username.github.io/your-repo-name)
+This project is deployed using GitHub Pages: https://pescearianna.github.io/Progetto-HTML-e-CSS-di-Arianna-Pesce/

@@ -39,7 +39,7 @@ nav {
       color: #ebedf2;
       font-family: "Montserrat", "Verdana", sans-serif;
       display: block;
-      padding: 20px;
+      padding: 1rem;
       text-decoration: none; }
   nav .logo {
     float: left;
@@ -66,7 +66,7 @@ nav {
         background-color: #fff300;
         border-bottom-left-radius: 20px; }
         nav .menu li {
-          font-size: 2rem;
+          font-size: 1.5rem;
           background-color: #0e0e17;
           margin-left: 2px;
           margin-bottom: 1px; } }
@@ -588,10 +588,11 @@ nav {
       height: 50vh; } }
   .start-col h1 {
     font-family: "Playfair Display", "Georgia", serif;
-    font-size: 4rem;
-    font-style: italic; }
+    font-size: 3.5rem;
+    font-style: italic;
+    margin: 0 1rem; }
   .start-col p {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .portfolio {
   display: flex;
@@ -643,7 +644,7 @@ nav {
       .portfolio .prj .prj-text:hover {
         box-shadow: -10px -10px 8px -10px black;
         opacity: 1; }
-      .portfolio .prj .prj-text h2 {
+      .portfolio .prj .prj-text .p-title {
         font-weight: 600; }
       .portfolio .prj .prj-text .desc {
         font-weight: 200;
@@ -662,6 +663,16 @@ nav {
     .portfolio .prj .prj-text:hover ~ img {
       opacity: 0.9; }
 
+@media (max-width: 600px) {
+  .prj-text {
+    padding: 0.5rem;
+    height: auto; }
+
+  .p-title {
+    font-size: 1rem; }
+
+  .desc {
+    font-size: 0.8rem; } }
 .contact-container {
   height: 100vh;
   display: flex;
@@ -816,6 +827,6 @@ footer {
   border: 3px solid red; }
 
 .sr {
-  display: none !important; }
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */

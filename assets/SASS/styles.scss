@@ -90,7 +90,7 @@ nav {
         color: $text-color;
         font-family: $sans;
         display: block;
-        padding: 20px;
+        padding: 1rem;
         text-decoration: none;
       }
     }
@@ -122,7 +122,7 @@ nav {
       background-color: $th-color;
       border-bottom-left-radius: 20px;
       li {
-        font-size: 2rem;
+        font-size: 1.5rem;
         background-color: $bg-color;
         margin-left: 2px;
         margin-bottom: 1px;
@@ -697,8 +697,6 @@ nav {
     .sk {
       width: 100%;
       display: block;
-
-
       @media (min-width: 600px) and (max-width: 1024px) {
         display: flex;
         justify-content: space-between;
@@ -708,8 +706,6 @@ nav {
   }
   .prj-parent {
     opacity: 0.8;
-    
-
     }
   }
 
@@ -734,11 +730,12 @@ nav {
   }
   h1 {
     font-family: $serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-style: italic;
+    margin: 0 1rem;
   }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -797,7 +794,7 @@ nav {
         box-shadow: -10px -10px 8px -10px black;
         opacity: 1;
       }
-      h2 {
+      .p-title {
         font-weight: 600;
       }
       .desc {
@@ -820,6 +817,19 @@ nav {
     .prj-text:hover ~ img {
       opacity: 0.9;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .prj-text{
+    padding: 0.5rem;
+    height: auto;
+  }
+  .p-title{
+    font-size: 1rem;
+  }
+  .desc{
+    font-size: 0.8rem;
   }
 }
 

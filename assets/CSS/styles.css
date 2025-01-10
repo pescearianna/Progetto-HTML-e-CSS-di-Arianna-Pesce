@@ -816,6 +816,6 @@ footer {
   border: 3px solid red; }
 
 .sr {
-  display: none; }
+  display: none !important; }
 
 /*# sourceMappingURL=styles.css.map */
